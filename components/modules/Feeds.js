@@ -10,7 +10,7 @@ function Feeds() {
 
   const getPosts = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/post');
+      const response = await fetch('https://public-post.vercel.app/api/post');
       const result = await response.json();
       // console.log("posts",result);
       setPosts(result);

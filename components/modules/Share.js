@@ -36,7 +36,7 @@ function Share({getPosts}) {
     handleReset();
     try {
       console.log("e",data);
-      const res =  await fetch(`http://localhost:3000/api/post`,{
+      const res =  await fetch(`https://public-post.vercel.app/api/post`,{
         method:"POST",
         headers:{
           'Content-Type':'application/json'
